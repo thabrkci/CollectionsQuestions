@@ -1,0 +1,14 @@
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\bin\Debug\net7.0\Koleksiyonlar Soru-3.exe
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\bin\Debug\net7.0\Koleksiyonlar Soru-3.deps.json
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\bin\Debug\net7.0\Koleksiyonlar Soru-3.runtimeconfig.json
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\bin\Debug\net7.0\Koleksiyonlar Soru-3.dll
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\bin\Debug\net7.0\Koleksiyonlar Soru-3.pdb
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.AssemblyInfoInputs.cache
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.AssemblyInfo.cs
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.csproj.CoreCompileInputs.cache
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.dll
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\refint\Koleksiyonlar Soru-3.dll
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.pdb
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\Koleksiyonlar Soru-3.genruntimeconfig.cache
+C:\Users\Taha\OneDrive\Masaüstü\PTK\Koleksiyonlar\Koleksiyonlar Soru-3\obj\Debug\net7.0\ref\Koleksiyonlar Soru-3.dll
