@@ -1,61 +1,73 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
-namespace Koleksiyonlar_Soru_2;
-
-class Program
+namespace Question2
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Lütfen 20 adet sayı giriniz !");
-        ArrayList bigvalue = new ArrayList();
-        ArrayList smallvalue = new ArrayList();
-
-        int[] value = new int[20]; 
-        
-        for (int i = 0; i < 20; i++)
+        static void Main(string[] args)
         {
-            Console.WriteLine($" Lütfen {i+1}.Sayıyı giriniz:");
-            while(!int.TryParse(Console.ReadLine(), out value[i]))
+            Console.WriteLine("Please enter 20 numbers!");
+
+            // Create ArrayLists to store values.
+            ArrayList bigValues = new ArrayList();
+            ArrayList smallValues = new ArrayList();
+
+            int[] values = new int[20];
+
+            // Get input from the user for 20 numbers.
+            for (int i = 0; i < 20; i++)
             {
-                Console.WriteLine("Hatalı giriş lütfen geçerli bir sayı giriniz ");
-                Console.Write($"Lütfen {i+1}.Sayıyı giriniz:");
+                Console.WriteLine($"Enter the {i + 1}. number:");
+
+                // Validate and store user input.
+                while (!int.TryParse(Console.ReadLine(), out values[i]))
+                {
+                    Console.WriteLine("Invalid input. Please enter a valid number.");
+                    Console.Write($"Enter the {i + 1}. number:");
+                }
             }
+
+            Console.WriteLine("/---------------Entered Numbers-------------------/");
+            // Display the entered numbers.
+            foreach (var item in values)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("/--------------------------------------------------/");
+
+            // Sort the array to get the minimum and maximum values.
+            Array.Sort(values);
+
+            // Create arrays to store the minimum and maximum three values.
+            int[] minThree = new int[3];
+            Array.Copy(values, minThree, 3);
+
+            int[] maxThree = new int[3];
+            Array.Copy(values, values.Length - 3, maxThree, 0, 3);
+
+            // Calculate averages for the minimum three, maximum three, and overall values.
+            double minThreeAverage = CalculateAverage(minThree);
+            double maxThreeAverage = CalculateAverage(maxThree);
+            double overallAverage = CalculateAverage(values);
+
+            Console.WriteLine("Minimum 3 values:");
+            // Display the minimum three values.
+            PrintArray(minThree);
+
+            Console.WriteLine("Maximum 3 values:");
+            // Display the maximum three values.
+            PrintArray(maxThree);
+
+            Console.WriteLine($"Average of the minimum 3 values: {minThreeAverage}");
+            Console.WriteLine($"Average of the maximum 3 values: {maxThreeAverage}");
+            Console.WriteLine($"Overall average of all values: {overallAverage}");
         }
-        Console.WriteLine("/----------------Girmiş olduğunuz sayılar-------------------/");
-        foreach (var item in value)
+
+        // Calculate the average of an array of integers.
+        static double CalculateAverage(int[] array)
         {
-            Console.WriteLine(item);
-        }
-        Console.WriteLine("/-------------------------------------------------------------------/");
-
-        Array.Sort(value);
-        int[] minThree = new int[3];
-        Array.Copy(value, minThree, 3);
-
-        int[] maxThree = new int[3];
-        Array.Copy(value, value.Length - 3, maxThree, 0,3);
-        
-        double minThreeAvarage = Calculating(minThree);
-        double maxThreeAvarage = Calculating(maxThree);
-        double overallAvarage = Calculating(value);
-        
-        Console.WriteLine("En küçük 3 sayı:");
-        PrintArray(minThree);
-
-        Console.WriteLine("En büyük 3 sayı:");
-        PrintArray(maxThree);
-        
-        Console.WriteLine($"En küçük 3 sayı ortalaması: {minThreeAvarage}");
-        Console.WriteLine($"En büyük 3 sayı ortalaması: {maxThreeAvarage}");
-        Console.WriteLine($"Tüm sayıların ortalaması: {overallAvarage}");
-
-
-
-
-
-        static double Calculating(int[] array)
-        {
-            int sum =0;
+            int sum = 0;
             foreach (var num in array)
             {
                 sum += num;
@@ -63,15 +75,14 @@ class Program
             return (double)sum / array.Length;
         }
 
-
+        // Display the elements of an array.
         static void PrintArray(int[] array)
         {
-          foreach (var num in array)
-          {
-            Console.Write($"{num}");
-          }
-          Console.WriteLine();
-
+            foreach (var num in array)
+            {
+                Console.Write($"{num} ");
+            }
+            Console.WriteLine();
         }
     }
 }
